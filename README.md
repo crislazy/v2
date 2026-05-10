@@ -11,13 +11,13 @@ This is a fully static website using APIs like:
 
 The oneko cat code is from [https://www.cssscript.com/demo/cat-follow-cursor-oneko](https://www.cssscript.com/demo/cat-follow-cursor-oneko)
 
+Also , I kind of learned more js from making this project :)
+
 ## Preview
 
 ![Preview](assets/previews/main.png)
 
 ## Todo
 
-- [ ] Blog page
-- [ ] Working Projects and Contact pages
-- [ ] More pages maybe
-- [ ] Guestbook maybe
+- [X] Blog page
+- [X] Working Projects and Contact pages

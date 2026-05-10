@@ -1,0 +1,11 @@
+[
+    {
+        "title": "Blob",
+        "description": "A simple Discord bot",
+        "id": "p1"
+    },
+    { 
+        "title": "Meow Gallery", 
+        "description": "A gallery with cat drawings. Submit now!", 
+        "id": "p2" }
+]
