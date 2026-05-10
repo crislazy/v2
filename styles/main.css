@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-
+/* --Main-- */
 html, body {
     height: 100%;
 }
@@ -29,18 +29,6 @@ a:hover {
     cursor: pointer;
 }
 
-.index-welcome-about-flex {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.index-welcome-about-flex-img {
-    display: flex;
-    flex-direction: column;
-    max-width: 175px;
-}
-
 .main-container{
     min-height: 100vh;
     display: flex;
@@ -51,6 +39,15 @@ main {
     flex:1;
 }
 
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 3px;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
 footer {
     justify-content: center;
     display: flex;
@@ -59,26 +56,35 @@ footer {
     border-top: 2px solid black;
 }
 
-#welcome {
-    height: 60px;
+footer p {
+    margin: 5px;
 }
 
-.code-lang {
+.index-welcome-about-flex {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    justify-content: center;
-    margin-top: 20px;
 }
 
-.code-lang-item {
-    text-align: center;
-    transition: transform 0.2s ease;
-    width: 90px;
+.index-welcome-about-flex h2 {
+    margin: 0;
 }
 
-.code-lang-item:hover {
-    transform: scale(1.1);
+.index-welcome-about-flex-img {
+    display: flex;
+    flex-direction: column;
+    max-width: 175px;
+}
+
+.index-welcome-about-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+}
+
+#welcome {
+    height: 60px;
 }
 
 .statuses {
@@ -90,4 +96,64 @@ footer {
 .status {
     border: 2px solid black;
     padding: 3px;
+}
+
+.coding-lang-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.coding-lang-buttons img{
+    width: 88px;
+    height: 31px;
+}
+
+.projects {
+    display: grid;
+    gap: 16px;
+    margin: 14px 20px 0 20px;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    padding: 5px;
+    border: 2px solid #000000;
+    gap: 8px;
+    align-items: center;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+.project p, project h3 {
+    margin:0;
+}
+
+@media (max-width: 700px) {
+    #welcome {
+        text-align: center;
+    }
+    .index-welcome-about-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .index-welcome-about-header{
+        justify-content: center;
+    }
+
+    .statuses {
+        flex-direction: column;
+    }
+
+    .coding-lang-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
