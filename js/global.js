@@ -39,3 +39,33 @@ function redirect(id) {
         location.href = "https://meowg.code2craft.xyz"
     }
 }
+
+// Navbar loader thing
+async function loadNav() {
+  const response = await fetch('/components/nav.html');
+  const html = await response.text();
+
+  document.getElementById('navbar').innerHTML = html;
+}
+
+loadNav();
+
+// Simple visit tracker
+const sourcep = new URLSearchParams(window.location.search);
+let source = "none"
+for (const thing of sourcep.keys()) {
+    source = thing;
+    break;
+}
+
+fetch("https://crisapis.vercel.app/api/trackStats", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    page: window.location.pathname,
+    referrer: document.referrer,
+    source: source
+  })
+});
