@@ -15,7 +15,7 @@ Also , I kind of learned more js from making this project :)
 
 ## Preview
 
-![Preview](assets/previews/main.png)
+![Preview](assets/previews/main.PNG)
 
 ## Todo
 
