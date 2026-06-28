@@ -1,5 +1,5 @@
 <h1 align="center">CrisLzy's Portfolio</h1>
-<p align="center"><i>The source code for portfolio.crislzy.xyz</i></p>
+<p align="center"><i>The source code for v2.crislzy.xyz</i></p>
 
 ## About
 This is my really cool portfolio website. It's still work in progress so not all pages might work and there may be bugs.
